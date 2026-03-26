@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh -T git@github.com)",
+      "Bash(mkdir -p ~/.ssh)",
+      "Bash(~/.ssh/config:*)",
+      "Bash(claude-code ?)",
+      "Bash(find ~/.claude/skills -name SKILL.md -exec echo '=== {} ===')",
+      "Bash(-exec head:*)",
+      "Bash(2)",
+      "Bash(find ~/.claude -name *.md -type f -exec grep -l name.*review {})",
+      "Bash(grep -v \"^\\\\.$\\\\|^\\\\.\\\\.$\")",
+      "Bash(find ~/.claude -name *stash* -o -name *draft* -o -name *saved*)",
+      "Bash(find ~/.claude -name *.json -type f -exec grep -l \"stash\\\\|saved.*prompt\" {})"
+    ]
+  }
+}
