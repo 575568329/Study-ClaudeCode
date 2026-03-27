@@ -11,7 +11,8 @@
       "Bash(find ~/.claude -name *.md -type f -exec grep -l name.*review {})",
       "Bash(grep -v \"^\\\\.$\\\\|^\\\\.\\\\.$\")",
       "Bash(find ~/.claude -name *stash* -o -name *draft* -o -name *saved*)",
-      "Bash(find ~/.claude -name *.json -type f -exec grep -l \"stash\\\\|saved.*prompt\" {})"
+      "Bash(find ~/.claude -name *.json -type f -exec grep -l \"stash\\\\|saved.*prompt\" {})",
+      "mcp__plugin_episodic-memory_episodic-memory__search"
     ]
   }
 }
